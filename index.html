@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Practical Assignment
+        </title>
+        
+    </head>
+    <link rel="stylesheet" href="./stylesheets/index.css">
+    <body>
+        
+        
+        <div id="nav" class="bg-color white-text">
+
+            <div>
+                Fortune Ellah
+            </div>
+        
+            <div >
+                <ul id="items-container">
+                   <li><a  href="/">Home</a></li>
+                   <li><a  href="#background">Background</a></li>
+                   <li><a  href="#hobbies">Hobbies</a></li>
+                   <li><a  href="#contact-me">Contact Me</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div id="home">
+
+            <div>
+
+                <div style="background-color:rgba(147, 39, 143, 0.11); padding: 30px; border-radius: 20vw;">
+               
+                   <div style="background-color:rgba(147, 39, 143, 0.11); padding: 30px; border-radius: 20vw;">
+                      <img id="my-image" src="assests/image.png.JPG" alt="Fortune">
+                   </div>
+
+                </div>
+
+            </div>
+
+            <div id="welcome" class="bg-color">
+                  <span class="white-text" style="font-weight:bold; font-size:40px; text-align:center;">HELLO<br> AND <br> WELCOME</span>
+            </div>
+
+        </div>
+        
+        <div id="background" >
+
+            <div class="white-text bg-color" style="padding:50px;border-radius:20px; width:50vw;height:50vw;; font-size:50px;" >
+                <p>
+                    My name is Fortune Ellah, I am 24 years old, and I live in Lagos, Nigeria. I have a B-Tech in Chemical Engineering from the University of Port Harcourt, Nigeria. I am a smart, hardworking, loyal, friendly and resilient woman. I love cooking, travelling, reading and swimiming. I just began my transition into tech and I'm excited and anxious at the same time. I look forward to this opportunity and my journey in tech.
+                </p>
+            </div>
+
+            <div style="font-size:145px; font-weight:bold; color:#93278f;margin-top:250px;">
+               <span>
+                   BACK<br>GROUND
+                <span>
+            </div>
+
+        </div>
+        
+        <div id="hobbies">
+
+            <div style="font-size:100px; font-weight:bold; color:#93278f;margin-top:250px; text-align: center;">
+                <span>
+                    HOBBIES
+                </span>
+            </div>
+
+            <div>
+                <img class="hobbies-img" src="assests/cooking.jpg" alt="cooking">
+                <img class="hobbies-img" src="assests/reading.jpg" alt="books">
+                <img class="hobbies-img" src="assests/swimiming.jpg" alt="olympic swimming">
+                <img class="hobbies-img" src="assests/travelling.jpg" alt="travel">
+            </div>
+
+        </div>
+
+        <div style="font-size:100px; font-weight:bold; color:#93278f; text-align: center; margin-top:150px;margin-bottom:200px;">
+            <span>
+                CONTACT ME
+            </span>
+        </div>
+
+        <div id="contact-me">
+            
+            <div>
+                <span class="info" style="background-color: rgba(8, 80, 115, 0.36); color:#085073;">
+                    Fortune Ellah
+                </span>
+
+                <span class="info" style="background-color: rgba(8, 80, 115, 0.36);text-align:center; color:#085073;">
+                    09033418109
+                </span>
+
+                <span class="info" style="background-color: rgba(8, 80, 115, 0.36); color:#085073;">
+                    N0 127 Lekki, Maruwa.
+                </span>
+
+                <div style="color:#085073; font-size:25px;font-weight:bold; margin-left:150px;margin-top:50px;">
+                    <span>
+                        On Social Media
+                    </span>
+                </div>
+
+                <div>
+                    <img class="icon-img" src="assests/facebook.png" alt="facebook-icon">
+                    <span>
+                        Fortune Ellah
+                    </span>
+                    <img class="icon-img" src="assests/email.png" alt="email-icon">
+                    <span>
+                        ellfortune3@gmail.com
+                    </span>
+                    <img class="icon-img" src="assests/IG.png" alt="instagram">
+                    <span>
+                        _chikaellah
+                    </span>
+                    <img class="icon-img" src="assests/twitter.png" alt="twitter">
+                    <span>
+                        ms_fec37
+                    </span>
+                </div>
+
+            </div>
+
+            <hr>
+            
+            <div id="form" >
+                
+                   <input id="fullname" type="text" placeholder="Your name" style="margin-top:10px;padding:10px;border: 2px solid #085073;" >
+                
+                   <input id="email" type="text" placeholder="Email" style="margin-top:20px;margin-bottom:20px;padding:10px;border: 2px solid #085073;" >
+                
+                   <textarea id="message" type="text" placeholder="Type message here..." style="border: 2px solid #085073; padding: 20px;" rows="10" cols="50"></textarea>
+                
+                    <button id="submit-btn" onclick="submitBtn()" value="submit" style="background-color: #93278f;box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);margin-top:10px; padding:15px 35px;cursor: pointer;font-weight:bold; border-radius: 5px;border-style: none;align-self: flex-end;" class="white-text" >
+                        Submit
+                    </button>
+                
+            </div>
+
+        </div>
+
+        <div id="footer" class="white-text bg-color">
+            <span>
+                All rights reserved - Fortune Ellah
+            </span>
+        </div>
+        
+        <script>
+            let submit = document.getElementById("submit-btn");
+            let inputEmail = document.getElementById("email")
+            let inputName = document.getElementById("fullname")
+            let inputText = document.getElementById("message")
+
+
+            function submitBtn() {
+
+                let inputName = document.getElementById("fullname").value
+                console.log(inputName)
+                fullname.value = "" 
+                let inputEmail = document.getElementById("email").value
+                console.log(inputEmail)
+                email.value = ""
+                let inputText = document.getElementById("message").value
+                console.log(inputText)
+                message.value = ""
+               
+            }
+        </script>
+    </body>
+</html>

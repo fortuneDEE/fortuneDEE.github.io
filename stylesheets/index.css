@@ -1,0 +1,173 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-inline: 0px;
+    padding-block: 0px;
+    margin-inline: 0px;
+    margin-block: 0px;
+}
+
+
+body{
+    width: 1920px;
+    height: 5040px;
+    cursor:pointer;
+    margin: 0px;
+}
+
+#nav{
+    padding: 33px 25px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight:bold;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.11);
+}
+
+.bg-color{
+    background-color: #085073;;
+}
+
+.white-text{
+    color:#fff;
+}
+
+#items-container{
+    display: flex;
+    list-style-type: none;
+}
+
+#items-container > li{
+    margin-left:30px;
+}
+a {
+    color:plum;
+    text-decoration: none;
+}
+
+a:focus{
+    color:brown;
+}
+
+a:hover {
+    color:aquamarine;
+}
+
+a:active {
+    color:red;
+}
+
+#home{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    padding: 100px 70px;
+    margin-top: 150px;
+}
+
+#my-image{
+    width: 20vw;
+    height: 20vw;
+    border-radius: 15vw;
+}
+
+#welcome{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 150px 300px;
+    border-bottom-left-radius: 10vw;
+    border-top-right-radius: 10vw;
+    
+}
+
+#background{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.hobbies-img{
+    width: 17vw;
+    height: 17vw;
+    display: inline-flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-content: center;
+    margin: 155px 15px;
+    margin-left: 100px;
+}
+
+#contact-me{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-left:150px;
+    margin-top:270px;
+    
+}
+
+.info{
+    width: 15vw;
+    height: 10vw;
+    margin: 35px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align:center;
+    padding-top: 40px; 
+    font-weight: bold;
+    font-size:20px;
+}
+
+.icon-img{
+    width:1vw;
+    height:1vw;
+    margin:3px;
+    margin-top: 30px;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 25px;
+    margin-right: 170px;
+    padding:20px;
+    width: 500px;
+    height:33vw;
+    border: 3px solid #93287f;
+    box-shadow: 0px 5px 10px #93287f;
+    border-radius: 10px;
+}
+input::placeholder{
+    color:#085073;
+}
+
+textarea::placeholder{
+    color: #085073;
+    
+}
+
+hr{
+    margin-left: 450px;
+    border:2px solid rgba(8, 80, 115, 0.36);
+    height: 33vw;
+    margin-top:30px;
+}
+
+#footer{
+    padding: 33px 25px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 15px;
+    margin-bottom: 0px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.11);
+    margin-top: 400px
+
+}
